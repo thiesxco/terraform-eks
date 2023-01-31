@@ -48,3 +48,6 @@ export EKS_CLUSTER_NAME=my-cluster-dev
 
 aws eks --region $REGION update-kubeconfig --name $EKS_CLUSTER_NAME
 Create EKS Using Terraform code
+  
+# remove/delete s3 bucket
+aws s3 rb s3://demo-eks-bucket-code --force
